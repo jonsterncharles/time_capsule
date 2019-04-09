@@ -1,10 +1,12 @@
 
 h1 {
-  font-style: italic;
+  font-family: BlackAvara;
   color: #373fff;
 }
 body {
   font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(115, 115, 115);
+  background-position: center;
 }
 .flip-card {
   background-color: transparent;
@@ -49,15 +51,20 @@ body {
 .grid-container {
   display: flex;
   grid-template-columns: auto auto auto;
-  background-color: #2196F3;
-  padding: 10px;
+  background-color: rgb(0, 153, 153);
+  padding: 50px;
   flex-wrap: wrap;
 }
 .grid-item {
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgb(223, 191, 159);
   border: 1px solid rgba(0, 0, 0, 0.8);
   padding: 20px;
   font-size: 30px;
+  justify-content: center;
   text-align: center;
   flex-wrap: wrap;
+}
+img {
+  max-width:100%;
+  cursor:pointer;
 }
