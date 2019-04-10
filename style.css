@@ -30,6 +30,7 @@ body {
   font-family: 'Courier New', sans-serif;
   background-color: rgb(25, 25, 250);
   background-position: center;
+  justify-content: center;
 }
 .flip-card {
   background-color: transparent;
@@ -78,6 +79,7 @@ body {
   background-color: rgb(25, 25, 250);
   padding: 50px;
   flex-wrap: wrap;
+  justify-content: center;
 
 }
 .grid-item {
