@@ -4,15 +4,22 @@ exterior headline etc --> #FAFA91
 inside flippy --> #FDFDD3 */
 /* inside flip text etc --> #888888 */
 
+@font-face{
+  font-family: myAvaraFont;
+  src:url(assets/fonts/Avara-Black.otf);
+}
+@font-face {
+  font-family: myLinotypeFont;
+  src: url(assets/fonts/LinotypeUniversTypewrtr-Rg.ttf);
+}
 h1 {
-  font-family: 'Arial', sans-serif;
-  font-style: oblique;
+  font-family: myAvaraFont, sans-serif;
   color: rgb(163, 163, 253);
   font-size: 0.6em;
 }
 
 h2{
-  font-family: 'Courier New', sans-serif;
+  font-family: myLinotypeFont, sans-serif;
   color: rgb(136, 136, 136);
   font-size: 0.5em;
   font-style: italic;
