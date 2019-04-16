@@ -15,25 +15,34 @@ inside flippy --> #FDFDD3 */
 h1 {
   font-family: myAvaraFont, sans-serif;
   color: rgb(163, 163, 253);
-  font-size: 0.6em;
+  font-size: .6em;
 }
 
 h2{
   font-family: myLinotypeFont, sans-serif;
   color: rgb(136, 136, 136);
-  font-size: 0.5em;
+  font-size: .425em;
+  font-style: italic;
+}
+h3{
+  font-family: myLinotypeFont, sans-serif;
+  color: rgb(136, 136, 136);
+  font-size: .325em;
   font-style: italic;
 }
 p{
-  border-right: 2px solid #A3A3FD; border-top:2px solid #A3A3FD; padding: 25px; text-align: left; font-size: 0.6em;
+  border-right: 2px solid #A3A3FD; border-top:2px solid #A3A3FD; padding: 25px; text-align: left; font-size: .625em;
 }
 
 
 body {
+  margin: auto;
   font-family: 'Courier New', sans-serif;
+  font-weight: bold;
   background-color: rgb(25, 25, 250);
   background-position: center;
   justify-content: center;
+  font-size: .5vw;
 }
 .flip-card {
   background-color: transparent;
@@ -65,7 +74,7 @@ body {
 }
 
 .flip-card-front {
-  background-color: #bbb;
+  background-color: transparent;
   color: black;
   z-index: 2;
 }
@@ -75,14 +84,20 @@ body {
   color: white;
   transform: rotateY(180deg);
   z-index: 1;
+
 }
 .grid-container {
   display: flex;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
   background-color: rgb(25, 25, 250);
-  padding: 50px;
+  padding: 100px;
   flex-wrap: wrap;
   justify-content: center;
+  flex-direction: row;
+  height: auto;
+  width: auto;
+
 
 }
 .grid-item {
@@ -93,9 +108,74 @@ body {
   justify-content: center;
   text-align: center;
   flex-wrap: wrap;
+  height: auto;
+  width: auto;
+}
+
+  .grid-container-2 {
+    display: flex;
+    grid-template-columns: auto auto auto;
+    background-color: rgb(25, 25, 250);
+    padding: 50px;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+    width: 75vw;
+
+
+  }
+  .grid-item-2 {
+    background-color: rgb(25, 25, 250);
+    border: 3px solid rgba(255, 255, 255);
+    padding: 25px;
+    font-size: 30px;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    width:  75vw;
+    flex-direction: row;
+
+
 
 }
+
 img {
-  max-width:100%;
+  width: 50vw;
   cursor:pointer;
+  transform: scale(0.7);
+}
+header {
+  margin: auto;
+}
+section {
+  width: auto;
+  height: auto;
+}
+audio:hover, audio:focus, audio:active
+{
+-webkit-box-shadow: 15px 15px 15px 15px rgba(255,255, 255, 0.4);
+-moz-box-shadow: 15px 15px 15px 15px rgba(255,255, 255, 0.4);
+box-shadow: 15px 15px 15px 15pxrgba(255,255, 255, 0.4);
+-webkit-transform: scale(.75);
+-moz-transform: scale(.75);
+transform: scale(.75);
+}
+
+
+audio
+{
+  -webkit-transform: scale(.5);
+  -moz-transform: scale(.5);
+  transform: scale(.5);
+-webkit-transition:all 0.5s linear;
+-moz-transition:all 0.5s linear;
+-o-transition:all 0.5s linear;
+transition:all 0.5s linear;
+-moz-box-shadow: 5px 5px 5px 5px rgba(255,255, 255, 0.4);
+-webkit-box-shadow:  5px 5px 5px 5px rgba(255,255, 255, 0.4);
+box-shadow: 5px 5px 5px 5px rgba(255,255, 255, 0.4);
+-moz-border-radius:10px 10px 10px 10px;
+-webkit-border-radius:10px 10px 10px 10px;
+border-radius:5px 5px 5px 5px;
+
 }
