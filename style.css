@@ -37,7 +37,7 @@ p{
 
 body {
   margin: auto;
-  font-family: 'Courier New', sans-serif;
+    font-family: myLinotypeFont, sans-serif;
   font-weight: bold;
   background-color: rgb(25, 25, 250);
   background-position: center;
@@ -60,6 +60,7 @@ body {
   transform-style: preserve-3d;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   font-family: 'Courier New', sans-serif;
+  box-shadow: 5px 10px 18px #A3A3FD;
 }
 
 .flip-card:hover .flip-card-inner {
@@ -74,7 +75,7 @@ body {
 }
 
 .flip-card-front {
-  background-color: transparent;
+  background-color: rgb(245,245,245);
   color: black;
   z-index: 2;
 }
@@ -126,7 +127,7 @@ body {
   }
   .grid-item-2 {
     background-color: rgb(25, 25, 250);
-    border: 3px solid rgba(255, 255, 255);
+    border: 3px solid rgb(255, 255, 255);
     padding: 25px;
     font-size: 30px;
     justify-content: center;
@@ -138,11 +139,14 @@ body {
 
 
 }
+#timer{
+  background-color: rgb(255, 255, 255);
+}
 
 img {
   width: 50vw;
   cursor:pointer;
-  transform: scale(0.7);
+
 }
 header {
   margin: auto;
@@ -150,12 +154,15 @@ header {
 section {
   width: auto;
   height: auto;
+  font-style: italic;
 }
 audio:hover, audio:focus, audio:active
 {
--webkit-box-shadow: 15px 15px 15px 15px rgba(255,255, 255, 0.4);
--moz-box-shadow: 15px 15px 15px 15px rgba(255,255, 255, 0.4);
-box-shadow: 15px 15px 15px 15pxrgba(255,255, 255, 0.4);
+  /*
+-webkit-box-shadow: 10px 10px 10px 10px rgba(255,255, 255, 0.4);
+-moz-box-shadow: 10px 10px 10px 10px rgba(255,255, 255, 0.4);
+box-shadow: 10px 10px 10px 10px rgba(255,255, 255, 0.4);
+*/
 -webkit-transform: scale(.75);
 -moz-transform: scale(.75);
 transform: scale(.75);
@@ -171,11 +178,17 @@ audio
 -moz-transition:all 0.5s linear;
 -o-transition:all 0.5s linear;
 transition:all 0.5s linear;
+/*
 -moz-box-shadow: 5px 5px 5px 5px rgba(255,255, 255, 0.4);
 -webkit-box-shadow:  5px 5px 5px 5px rgba(255,255, 255, 0.4);
 box-shadow: 5px 5px 5px 5px rgba(255,255, 255, 0.4);
+*/
 -moz-border-radius:10px 10px 10px 10px;
 -webkit-border-radius:10px 10px 10px 10px;
 border-radius:5px 5px 5px 5px;
+-moz-border-color: rgb(255,255,255);
+-webkit-border-color:rgb(255,255,255);
+border-color:rgb(255,255,255);
+
 
 }
