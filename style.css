@@ -37,8 +37,7 @@ p{
 
 body {
   margin: auto;
-    font-family: myLinotypeFont, sans-serif;
-  font-weight: bold;
+  font-family: myLinotypeFont, sans-serif;
   background-color: rgb(25, 25, 250);
   background-position: center;
   justify-content: center;
@@ -59,7 +58,7 @@ body {
   transition: transform 0.6s;
   transform-style: preserve-3d;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  font-family: 'Courier New', sans-serif;
+  font-family: 'myLinotypeFont', sans-serif;
   box-shadow: 5px 10px 18px #A3A3FD;
 }
 
@@ -103,7 +102,6 @@ body {
 }
 .grid-item {
   background-color: rgb(25, 25, 250);
-  border: 3px solid rgba(255, 255, 255);
   padding: 20px;
   font-size: 30px;
   justify-content: center;
@@ -127,20 +125,21 @@ body {
   }
   .grid-item-2 {
     background-color: rgb(25, 25, 250);
-    border: 3px solid rgb(255, 255, 255);
-    padding: 25px;
     font-size: 30px;
     justify-content: center;
     text-align: center;
     flex-wrap: wrap;
     width:  75vw;
     flex-direction: row;
+    padding: 20px;
 
 
 
 }
 #timer{
   background-color: rgb(255, 255, 255);
+  width: auto;
+  height: auto;
 }
 
 img {
